@@ -1,15 +1,246 @@
 {
-  "posts": [{ "id": 1, "title": "json-server", "author": "typicode" }],
-  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
-  "profile": { "name": "typicode" },
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
   "users": [
-    { "name": "John Doe", "email": "john@example.com" },
-    { "name": "Jane Smith", "email": "jane@example.com" },
-    { "name": "Jane Smith", "email": "jane@example.com" },
-    { "name": "Jane Smith", "email": "jane@example.com" },
-    { "name": "Jane Smith", "email": "jane@example.com" },
-    { "name": "Jane Smith", "email": "jane@example.com" },
-    { "name": "Jane Smith", "email": "jane@example.com" },
-    { "name": "Jane Smith", "email": "jane@example.com" }
+    {
+      "id": 1,
+      "name": "admin",
+      "email": "admin@example.com",
+      "role": "admin",
+      "password": "mysecretpassword",
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "role": "user",
+      "password": "anotherpassword",
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "name": "Michael Johnson",
+      "email": "michael.johnson@example.com",
+      "role": "user",
+      "password": "secure123",
+      "isActive": true
+    },
+    {
+      "id": 4,
+      "name": "Emily Brown",
+      "email": "emily.brown@example.com",
+      "role": "user",
+      "password": "brownie",
+      "isActive": true
+    },
+    {
+      "id": 5,
+      "name": "David Wilson",
+      "email": "david.wilson@example.com",
+      "role": "user",
+      "password": "wilson123",
+      "isActive": true
+    },
+    {
+      "id": 6,
+      "name": "Sarah Johnson",
+      "email": "sarah.johnson@example.com",
+      "role": "user",
+      "password": "1234sarah",
+      "isActive": true
+    },
+    {
+      "id": 7,
+      "name": "Robert Davis",
+      "email": "robert.davis@example.com",
+      "role": "user",
+      "password": "davisrobert",
+      "isActive": true
+    },
+    {
+      "id": 8,
+      "name": "Linda Martinez",
+      "email": "linda.martinez@example.com",
+      "role": "user",
+      "password": "m123artinez",
+      "isActive": true
+    },
+    {
+      "id": 9,
+      "name": "William Anderson",
+      "email": "william.anderson@example.com",
+      "role": "user",
+      "password": "andersonw",
+      "isActive": true
+    },
+    {
+      "id": 10,
+      "name": "Amanda Lee",
+      "email": "amanda.lee@example.com",
+      "role": "user",
+      "password": "leeamanda",
+      "isActive": true
+    }
+  ],
+  "documents": [
+    {
+      "id": 1,
+      "documentNo": "DOC001",
+      "detail": "Lorem ipsum dolor sit amet.",
+      "step": "Initial Processing",
+      "CreatedUser": "Alice",
+      "day": 10,
+      "DocumentType": "Proposal",
+      "receivedDate": "2023-08-01T08:00:00Z",
+      "IsRead": true
+    },
+    {
+      "id": 6,
+      "documentNo": "DOC006",
+      "detail": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "step": "Validation",
+      "CreatedUser": "Frank",
+      "day": 20,
+      "DocumentType": "Invoice",
+      "receivedDate": "2023-08-06T08:00:00Z",
+      "IsRead": true
+    },
+    {
+      "id": 7,
+      "documentNo": "DOC007",
+      "detail": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "step": "Approval",
+      "CreatedUser": "Grace",
+      "day": 10,
+      "DocumentType": "Policy",
+      "receivedDate": "2023-08-07T08:00:00Z",
+      "IsRead": true
+    },
+    {
+      "id": 8,
+      "documentNo": "DOC008",
+      "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "step": "Verification",
+      "CreatedUser": "Henry",
+      "day": 20,
+      "DocumentType": "Report",
+      "receivedDate": "2023-08-08T08:00:00Z",
+      "IsRead": true
+    },
+    {
+      "id": 9,
+      "documentNo": "DOC009",
+      "detail": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "step": "Final Review",
+      "CreatedUser": "Ivy",
+      "day": 10,
+      "DocumentType": "Agreement",
+      "receivedDate": "2023-08-09T08:00:00Z",
+      "IsRead": true
+    },
+    {
+      "id": 10,
+      "documentNo": "DOC010",
+      "detail": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "step": "Processing",
+      "CreatedUser": "Jack",
+      "day": 20,
+      "DocumentType": "Proposal",
+      "receivedDate": "2023-08-10T08:00:00Z",
+      "IsRead": false
+    },
+    {
+      "id": 11,
+      "documentNo": "DOC011",
+      "detail": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "step": "Initial Processing",
+      "CreatedUser": "Kelly",
+      "day": 10,
+      "DocumentType": "Contract",
+      "receivedDate": "2023-08-11T08:00:00Z",
+      "IsRead": false
+    },
+    {
+      "id": 12,
+      "documentNo": "DOC012",
+      "detail": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "step": "Archiving",
+      "CreatedUser": "Leo",
+      "day": 20,
+      "DocumentType": "Memo",
+      "receivedDate": "2023-08-12T08:00:00Z",
+      "IsRead": false
+    },
+    {
+      "id": 13,
+      "documentNo": "DOC013",
+      "detail": "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "step": "Review and Approval",
+      "CreatedUser": "Mia",
+      "day": 10,
+      "DocumentType": "Presentation",
+      "receivedDate": "2023-08-13T08:00:00Z",
+      "IsRead": true
+    },
+    {
+      "id": 14,
+      "documentNo": "DOC014",
+      "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "step": "Validation",
+      "CreatedUser": "Noah",
+      "day": 20,
+      "DocumentType": "Invoice",
+      "receivedDate": "2023-08-14T08:00:00Z",
+      "IsRead": false
+    },
+    {
+      "id": 15,
+      "documentNo": "DOC015",
+      "detail": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "step": "Approval",
+      "CreatedUser": "Olivia",
+      "day": 10,
+      "DocumentType": "Policy",
+      "receivedDate": "2023-08-15T08:00:00Z",
+      "IsRead": false
+    },
+    {
+      "id": 16,
+      "documentNo": "DOC016",
+      "detail": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "step": "Verification",
+      "CreatedUser": "Peter",
+      "day": 20,
+      "DocumentType": "Report",
+      "receivedDate": "2023-08-16T08:00:00Z",
+      "IsRead": false
+    },
+    {
+      "id": 17,
+      "documentNo": "DOC017",
+      "detail": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "step": "Final Review",
+      "CreatedUser": "Quinn",
+      "day": 10,
+      "DocumentType": "Agreement",
+      "receivedDate": "2023-08-17T08:00:00Z",
+      "IsRead": false
+    }
   ]
 }

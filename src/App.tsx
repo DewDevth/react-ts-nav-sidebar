@@ -1,12 +1,16 @@
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar';
 import AppRoutes from './routes/AppRoutes';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { Route, BrowserRouter as Router } from 'react-router-dom';
+import Login from './screens/Login';
 
 function App() {
 
   return (
+
+
     <Router>
+
       <>
         <div className="flex flex-col lg:flex-row">
           {/* <!-- Sidebar --> */}
